@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">EYIC</string>  <!--कृषि Welfare-->
+
+    <string name="livtoken">a2cd6fa0fa6d0267436c3a832cd5efeb6029cc4f</string>
+    <string name="modules">MODULES</string>
+    <string name="overview">OVERVIEW</string>
+    <string name="mean_temperature">Mean Temperature</string>
+    <string name="mean_humidity">Mean Humidity</string>
+    <string name="mean_soil_moisture">Mean Soil Moisture</string>
+    <string name="mean_light_intensity">Mean Light Intensity</string>
+    <string name="graphs">GRAPHS</string>
+    <string name="tap_to_record">Tap to record</string>
+    <string name="en">EN</string>
+    <string name="sensor_module_2">SENSOR MODULE 2</string>
+    <string name="sensor_module_1">SENSOR MODULE 1</string>
+    <string name="sensor_module_3">SENSOR MODULE 3</string>
+    <string name="sensor_module_4">SENSOR MODULE 4</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="soil_moisture">Soil Moisture</string>
+    <string name="light_intensity">Light Intensity</string>
+    <string name="title_activity_sensor_module_1_graph">sensor_module_1_graph</string>
+    <string name="automatic_mode">AUTOMATIC MODE:</string>
+    <string name="on">ON</string>
+</resources>

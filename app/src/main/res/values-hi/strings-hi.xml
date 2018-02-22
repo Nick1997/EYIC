@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">EYIC</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="livtoken">1461597a5e17d97f0c4c375e9b6c66ac4aee4d93</string>
+    <string name="modules">मॉड्यूल</string>
+    <string name="overview">अवलोकन</string>
+    <string name="mean_temperature">औसत तापमान</string>
+    <string name="mean_humidity">औसत नमी</string>
+    <string name="mean_soil_moisture">औसत मिटटी की नमी</string>
+    <string name="mean_light_intensity">औसत प्रकाश की तीव्रता</string>
+    <string name="graphs">रेखांकन</string>
+    <string name="tap_to_record">रिकॉर्ड करने के लिए टैप करें</string>
+    <string name="en">EN</string>
+    <string name="sensor_module_2">सेंसर मॉड्यूल दो</string>
+    <string name="sensor_module_1">सेंसर मॉड्यूल एक</string>
+    <string name="sensor_module_3">सेंसर मॉड्यूल तीन</string>
+    <string name="sensor_module_4">सेंसर मॉड्यूल चार</string>
+    <string name="temperature">तापमान</string>
+    <string name="humidity">नमी</string>
+    <string name="soil_moisture">मिटटी की नमी</string>
+    <string name="light_intensity">प्रकाश की तीव्रता</string>
+
+</resources>

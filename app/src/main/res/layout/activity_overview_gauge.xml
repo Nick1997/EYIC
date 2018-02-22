@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.nikhil.eyic.overview_gauge">
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="495dp"
+        android:layout_width="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        <TextView
+            android:id="@+id/temptxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:textSize="35dp"
+            android:text="@string/mean_temperature" />
+
+        <WebView
+            android:id="@+id/gauge_t"
+            android:layout_width="match_parent"
+            android:layout_height="207dp"
+            android:layout_below="@+id/temptxt"
+            android:scrollbars="none"
+            tools:layout_editor_absoluteX="-1dp" />
+        <TextView
+            android:id="@+id/humidtxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/gauge_t"
+            android:textSize="35dp"
+            android:text="@string/mean_humidity" />
+        <WebView
+            android:id="@+id/gauge_h"
+            android:layout_width="match_parent"
+            android:layout_height="207dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="210dp"
+            android:layout_below="@+id/humidtxt"
+            android:layout_alignParentStart="true"
+            android:scrollbars="none"
+            />
+        <TextView
+            android:id="@+id/soiltxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/gauge_h"
+            android:textSize="35dp"
+            android:text="@string/mean_soil_moisture" />
+        <WebView
+            android:id="@+id/gauge_s"
+            android:layout_width="match_parent"
+            android:layout_height="207dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="210dp"
+            android:layout_below="@+id/soiltxt"
+            android:layout_alignParentStart="true"
+            android:scrollbars="none"
+            />
+        <TextView
+            android:id="@+id/lighttxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/gauge_s"
+            android:textSize="35dp"
+            android:text="@string/mean_light_intensity" />
+        <WebView
+            android:id="@+id/gauge_l"
+            android:layout_width="match_parent"
+            android:layout_height="207dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="210dp"
+            android:layout_below="@+id/lighttxt"
+            android:layout_alignParentStart="true"
+            android:scrollbars="none"
+            >
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/graphs"
+                android:layout_marginEnd="0dp"
+                android:onClick="toOverviewGraph"
+                tools:layout_editor_absoluteX="287dp"
+                tools:layout_editor_absoluteY="4dp" />
+
+
+        </WebView>
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:onClick="toLiv"
+            app:srcCompat="@android:drawable/ic_btn_speak_now" />
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

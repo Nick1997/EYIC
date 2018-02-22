@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:id="@+id/b_speech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:onClick="toLiv"
+        app:srcCompat="@android:drawable/ic_btn_speak_now" />
+
+    <Button
+        android:id="@+id/b_overview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/b_speech"
+        android:layout_marginTop="76dp"
+        android:onClick="toAvg"
+        android:text="@string/overview"
+        android:textAlignment="center"
+
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/b_modules"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/b_overview"
+        android:layout_marginTop="53dp"
+        android:onClick="toModules"
+        android:text="@string/modules"
+        android:textAlignment="center"
+
+        android:textSize="30sp"/>
+
+   <!-- <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/b_modules"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="54dp"
+        android:text="@string/automatic_mode"
+        android:textSize="20sp" />  -->
+
+  <!--  <ToggleButton
+        android:id="@+id/toggleButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/textView"
+        android:onClick="toggle"
+        android:text="@string/on" /> -->
+
+</RelativeLayout>

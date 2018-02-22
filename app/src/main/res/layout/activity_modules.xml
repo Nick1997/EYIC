@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.nikhil.eyic.modules">
+
+    <Button
+        android:id="@+id/sm1"
+        android:layout_width="190dp"
+        android:layout_height="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/sm3"
+        android:layout_marginTop="42dp"
+        android:onClick="toSM1"
+        android:text="@string/sensor_module_1"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <Button
+        android:id="@+id/sm2"
+        android:layout_width="190dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/sm1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:onClick="toSM2"
+        android:text="@string/sensor_module_2"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <Button
+        android:id="@+id/sm3"
+        android:layout_width="190dp"
+        android:layout_height="67dp"
+        android:layout_alignStart="@+id/sm2"
+        android:layout_below="@+id/sm2"
+        android:layout_marginTop="44dp"
+        android:onClick="toSM3"
+        android:text="@string/sensor_module_3"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <Button
+        android:id="@+id/sm4"
+        android:layout_width="190dp"
+        android:layout_height="67dp"
+        android:layout_alignStart="@+id/sm3"
+        android:layout_below="@+id/sm3"
+        android:layout_marginTop="45dp"
+        android:onClick="toSM4"
+        android:text="@string/sensor_module_4"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:onClick="toLiv"
+        app:srcCompat="@android:drawable/ic_btn_speak_now" />
+</RelativeLayout>
