@@ -24,33 +24,31 @@ public class overview_gauge extends AppCompatActivity {
         WebView gauge_t = findViewById(R.id.gauge_t);
         gauge_t.getSettings().setJavaScriptEnabled(true);
         //gauge_webview.loadUrl("file:///android_asset/gauge.html");
-        String html = "<iframe width=\"900\" height=\"500\" frameborder=\"0\" src=\"https://app.ubidots.com/ubi/getchart/9UlESsxGS-uWbDp2viahVDheH-E\"></iframe>";
+        String html = "<iframe width=\"900\" height=\"500\" frameborder=\"0\" src=\"https://app.ubidots.com/ubi/getchart/RotDxcJdwWfor084FZn90JpeLxw\"></iframe>";
         gauge_t.loadData(html, "text/html", null);
         gauge_t.getSettings().setLoadWithOverviewMode(true);
         gauge_t.getSettings().setUseWideViewPort(true);
 
         WebView gauge_h = findViewById(R.id.gauge_h);
         gauge_h.getSettings().setJavaScriptEnabled(true);
-        String html2 = "<iframe width=\"900\" height=\"500\" frameborder=\"0\" src=\"https://app.ubidots.com/ubi/getchart/8IfKerg2H4dpDBDg8ezrITVoZlI\"></iframe>";
+        String html2 = "<iframe width=\"900\" height=\"500\" frameborder=\"0\" src=\"https://app.ubidots.com/ubi/getchart/qBBq5zx2Ig7VaKmxEDgzrDtrcHM\"></iframe>";
         gauge_h.loadData(html2, "text/html", null);
         gauge_h.getSettings().setLoadWithOverviewMode(true);
         gauge_h.getSettings().setUseWideViewPort(true);
 
         WebView gauge_s = findViewById(R.id.gauge_s);
         gauge_s.getSettings().setJavaScriptEnabled(true);
-        String html3 = "<iframe width=\"900\" height=\"500\" frameborder=\"0\" src=\"https://app.ubidots.com/ubi/getchart/t9ytVY5WYXQh9Tn-l2taYiXFgpU\"></iframe>";
+        String html3 = "<iframe width=\"900\" height=\"500\" frameborder=\"0\" src=\"https://app.ubidots.com/ubi/getchart/hwNJ9MSAofP3hyIkbzqX6rPxTds\"></iframe>";
         gauge_s.loadData(html3, "text/html", null);
         gauge_s.getSettings().setLoadWithOverviewMode(true);
         gauge_s.getSettings().setUseWideViewPort(true);
 
         WebView gauge_l = findViewById(R.id.gauge_l);
         gauge_l.getSettings().setJavaScriptEnabled(true);
-        String html4 = "<iframe width=\"900\" height=\"500\" frameborder=\"0\" src=\"https://app.ubidots.com/ubi/getchart/cD4U-Ft-SKH6ExPjjFBy_vspJ4I\"></iframe>";
+        String html4 = "<iframe width=\"900\" height=\"500\" frameborder=\"0\" src=\"https://app.ubidots.com/ubi/getchart/FDXOVXGWYDVnqLAjegDCwWd8COA\"></iframe>";
         gauge_l.loadData(html4, "text/html", null);
         gauge_l.getSettings().setLoadWithOverviewMode(true);
         gauge_l.getSettings().setUseWideViewPort(true);
-
-
     }
     public void toOverviewGraph(View view){
         Intent intent = new Intent(this, OverviewGraph.class);

@@ -42,7 +42,7 @@
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="49dp" />
 
-    <Button
+ <!--   <Button
         android:id="@+id/sm4"
         android:layout_width="190dp"
         android:layout_height="67dp"
@@ -52,7 +52,7 @@
         android:onClick="toSM4"
         android:text="@string/sensor_module_4"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="49dp" />
+        tools:layout_editor_absoluteY="49dp" /> -->
 
     <ImageButton
         android:id="@+id/imageButton"

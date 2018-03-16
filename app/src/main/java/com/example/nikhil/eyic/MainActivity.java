@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //ImageButton b_speech = findViewById(R.id.b_speech);
-
-
     }
     public void toLiv(View view)
     {
