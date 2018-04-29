@@ -246,7 +246,6 @@ public class LivFragment extends Fragment {
     }
 
     public void translate(String string) throws ExecutionException, InterruptedException {
-        String textToBeTranslated=string;
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
         String lang=prefs.getString("pref_language","");
         Log.i("PREFS FROM TRANSLATE",lang);
@@ -260,7 +259,7 @@ public class LivFragment extends Fragment {
             TranslatorBackgroundTask translatorBackgroundTask= new TranslatorBackgroundTask(getActivity().getApplicationContext());
             String translationResult =
                     translatorBackgroundTask.execute
-                            (textToBeTranslated,languagePair).get(); // Returns the translated text as a String
+                            (string,languagePair).get(); // Returns the translated text as a String
 
        // new Handler().postDelayed(new Runnable() {
         //@Override

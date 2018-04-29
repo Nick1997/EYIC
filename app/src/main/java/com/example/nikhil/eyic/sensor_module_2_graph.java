@@ -27,28 +27,28 @@ public class sensor_module_2_graph extends AppCompatActivity {
         WebView graph_t = findViewById(R.id.graph_t);
         graph_t.getSettings().setJavaScriptEnabled(true);
         //gauge_webview.loadUrl("file:///android_asset/gauge.html");
-        String html = "<iframe width=\"900\" height=\"500\" frameborder=\"0\" src=\"https://app.ubidots.com/ubi/getchart/wHeRvi6kQ5tnzXdUOIrpLDndc6w\"></iframe>";
+        String html = "<iframe width=\"900\" height=\"500\" frameborder=\"0\" src=\"https://app.ubidots.com/ubi/getchart/2oC97ZKsGcZz_w1wrc21voGmQTM\"></iframe>";
         graph_t.loadData(html, "text/html", null);
         graph_t.getSettings().setLoadWithOverviewMode(true);
         graph_t.getSettings().setUseWideViewPort(true);
 
         WebView graph_h = findViewById(R.id.graph_h);
         graph_h .getSettings().setJavaScriptEnabled(true);
-        String html2 = "<iframe width=\"900\" height=\"500\" frameborder=\"0\" src=\"https://app.ubidots.com/ubi/getchart/HpED2R94WAzrqtX_u-9bbsAuly8\"></iframe>";
+        String html2 = "<iframe width=\"900\" height=\"500\" frameborder=\"0\" src=\"https://app.ubidots.com/ubi/getchart/hySwzt2u0s1eZKPYyeTnhAv-N5M\"></iframe>";
         graph_h .loadData(html2, "text/html", null);
         graph_h .getSettings().setLoadWithOverviewMode(true);
         graph_h .getSettings().setUseWideViewPort(true);
 
         WebView graph_s = findViewById(R.id.graph_s);
         graph_s.getSettings().setJavaScriptEnabled(true);
-        String html3 = "<iframe width=\"900\" height=\"500\" frameborder=\"0\" src=\"https://app.ubidots.com/ubi/getchart/0mailHJbkVafhEQqydiKTMzOPJg\"></iframe>";
+        String html3 = "<iframe width=\"900\" height=\"500\" frameborder=\"0\" src=\"https://app.ubidots.com/ubi/getchart/0qQfISTvQp83xo24Taf7veJ1fzc\"></iframe>";
         graph_s.loadData(html3, "text/html", null);
         graph_s.getSettings().setLoadWithOverviewMode(true);
         graph_s.getSettings().setUseWideViewPort(true);
 
         WebView graph_l = findViewById(R.id.graph_l);
         graph_l.getSettings().setJavaScriptEnabled(true);
-        String html4 = "<iframe width=\"900\" height=\"500\" frameborder=\"0\" src=\"https://app.ubidots.com/ubi/getchart/au8xtXLNZ4KdyMPc-8H1U2Iqu70\"></iframe>";
+        String html4 = "<iframe width=\"900\" height=\"500\" frameborder=\"0\" src=\"https://app.ubidots.com/ubi/getchart/rnVCQtKN4hSMGxMDlvZk7cpSUJQ\"></iframe>";
         graph_l.loadData(html4, "text/html", null);
         graph_l.getSettings().setLoadWithOverviewMode(true);
         graph_l.getSettings().setUseWideViewPort(true);
