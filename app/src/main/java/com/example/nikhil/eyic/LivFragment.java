@@ -425,7 +425,7 @@ public class LivFragment extends Fragment {
                     }
                 }) {
             @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
+            public Map<String, String> getHeaders() {
                 HashMap<String, String> headers = new HashMap<String, String>();
                 headers.put("Content-Type", "application/json; charset=utf-8");
                 headers.put("User-agent", System.getProperty("http.agent"));
@@ -637,33 +637,41 @@ public class LivFragment extends Fragment {
                 tts.setPitch((float) 1);
                 if (Objects.equals(lang, "EN")) {
                     tts.speak("water pump has been started", TextToSpeech.QUEUE_ADD, null);
+                    Toast.makeText(getActivity().getApplicationContext(),"Water pump has been started", Toast.LENGTH_LONG).show();
                 }
                 else if(Objects.equals(lang,"MR")){
                     tts.speak("पाणी पंप सुरू करण्यात आले आहे",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"पाणी पंप सुरु झाला", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"PB"))
                 {
                     tts.speak("ਪਾਣੀ ਪੰਪ ਸ਼ੁਰੂ ਹੋ ਗਿਆ ਹੈ",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"ਪਾਣੀ ਪੰਪ ਸ਼ੁਰੂ ਹੋ ਗਿਆ ਹੈ", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"KA"))
                 {
                     tts.speak("ನೀರಿನ ಪಂಪ್ ಅನ್ನು ಪ್ರಾರಂಭಿಸಲಾಗಿದೆ",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"ನೀರಿನ ಪಂಪ್ ಅನ್ನು ಪ್ರಾರಂಭಿಸಲಾಗಿದೆ", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"BN"))
                 {
                     tts.speak("জল পাম্প শুরু করা হয়েছে",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"জল পাম্প শুরু করা হয়েছে", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"TE"))
                 {
                     tts.speak("నీటి పంపు ప్రారంభించబడింది",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"నీటి పంపు ప్రారంభించబడింది", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"HI"))
                 {
                     tts.speak("पानी पंप शुरू कर दिया गया है",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"पानी पंप शुरू कर दिया गया है", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"GU"))
                 {
                     tts.speak("પાણી પંપ શરૂ કરવામાં આવ્યું છે",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"પાણી પંપ શરૂ કરવામાં આવ્યું છે", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -681,33 +689,41 @@ public class LivFragment extends Fragment {
                 tts.setPitch((float) 1);
                 if (Objects.equals(lang, "EN")) {
                     tts.speak("water pump has been stopped", TextToSpeech.QUEUE_ADD, null);
+                    Toast.makeText(getActivity().getApplicationContext(),"Water pump has been stopped", Toast.LENGTH_LONG).show();
                 }
                 else if(Objects.equals(lang,"MR")){
                     tts.speak("पाणी पंप थांबविले गेले आहे",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"पाणी पंप थांबविले गेले आहे", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"PB"))
                 {
                     tts.speak("ਪਾਣੀ ਦਾ ਪੰਪ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"ਪਾਣੀ ਦਾ ਪੰਪ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"KA"))
                 {
                     tts.speak("ನೀರಿನ ಪಂಪ್ ಅನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"ನೀರಿನ ಪಂಪ್ ಅನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"BN"))
                 {
                     tts.speak("জল পাম্প বন্ধ করা হয়েছে",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"জল পাম্প বন্ধ করা হয়েছে", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"TE"))
                 {
                     tts.speak("నీటి పంపు నిలిపివేయబడింది",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"నీటి పంపు నిలిపివేయబడింది", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"HI"))
                 {
                     tts.speak("पानी पंप बंद कर दिया गया है",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"पानी पंप बंद कर दिया गया है", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"GU"))
                 {
                     tts.speak("પાણી પંપ બંધ કરવામાં આવ્યું છે",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"પાણી પંપ બંધ કરવામાં આવ્યું છે", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -725,33 +741,41 @@ public class LivFragment extends Fragment {
                 tts.setPitch((float) 1);
                 if (Objects.equals(lang, "EN")) {
                     tts.speak("pesticide unit has been started", TextToSpeech.QUEUE_ADD, null);
+                    Toast.makeText(getActivity().getApplicationContext(),"pesticide unit has been started", Toast.LENGTH_LONG).show();
                 }
                 else if(Objects.equals(lang,"MR")){
                     tts.speak("कीटकनाशक युनिट सुरू करण्यात आले आहे",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"कीटकनाशक युनिट सुरू करण्यात आले आहे", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"PB"))
                 {
                     tts.speak("ਕੀਟਨਾਸ਼ਕਾਂ ਦੀ ਇਕਾਈ ਸ਼ੁਰੂ ਕੀਤੀ ਗਈ ਹੈ",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"ਕੀਟਨਾਸ਼ਕਾਂ ਦੀ ਇਕਾਈ ਸ਼ੁਰੂ ਕੀਤੀ ਗਈ ਹੈ", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"KA"))
                 {
                     tts.speak("ಕೀಟನಾಶಕ ಘಟಕವನ್ನು ಪ್ರಾರಂಭಿಸಲಾಗಿದೆ",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"ಕೀಟನಾಶಕ ಘಟಕವನ್ನು ಪ್ರಾರಂಭಿಸಲಾಗಿದೆ", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"BN"))
                 {
                     tts.speak("কীটনাশক ইউনিট চালু করা হয়েছে",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"কীটনাশক ইউনিট চালু করা হয়েছে", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"TE"))
                 {
                     tts.speak("పురుగుమందుల యూనిట్ ప్రారంభించబడింది",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"పురుగుమందుల యూనిట్ ప్రారంభించబడింది", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"HI"))
                 {
                     tts.speak("कीटनाशक इकाई शुरू की गई है",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"कीटनाशक इकाई शुरू की गई है", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"GU"))
                 {
                     tts.speak("જંતુનાશક એકમની શરૂઆત થઈ છે",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"જંતુનાશક એકમની શરૂઆત થઈ છે", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -769,33 +793,41 @@ public class LivFragment extends Fragment {
                 tts.setPitch((float) 1);
                 if (Objects.equals(lang, "EN")) {
                     tts.speak("pesticide unit has been stopped", TextToSpeech.QUEUE_ADD, null);
+                    Toast.makeText(getActivity().getApplicationContext(),"pesticide unit has been stopped", Toast.LENGTH_LONG).show();
                 }
                 else if(Objects.equals(lang,"MR")){
                     tts.speak("कीटकनाशक युनिट थांबविले गेले आहे",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"कीटकनाशक युनिट थांबविले गेले आहे", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"PB"))
                 {
                     tts.speak("ਕੀਟਨਾਸ਼ਕ ਯੂਨਿਟ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"ਕੀਟਨਾਸ਼ਕ ਯੂਨਿਟ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"KA"))
                 {
                     tts.speak("ಕೀಟನಾಶಕ ಘಟಕವನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"ಕೀಟನಾಶಕ ಘಟಕವನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"BN"))
                 {
                     tts.speak("কীটনাশক ইউনিট বন্ধ করা হয়েছে",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"কীটনাশক ইউনিট বন্ধ করা হয়েছে", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"TE"))
                 {
                     tts.speak("పురుగుమందుల విభాగం నిలిపివేయబడింది",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"పురుగుమందుల విభాగం నిలిపివేయబడింది", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"HI"))
                 {
                     tts.speak("कीटनाशक इकाई बंद कर दिया गया है",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"कीटनाशक इकाई बंद कर दिया गया है", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"GU"))
                 {
                     tts.speak("જંતુનાશક એકમ બંધ કરવામાં આવ્યું છે",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"ંતુનાશક એકમ બંધ કરવામાં આવ્યું છે", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -813,33 +845,41 @@ public class LivFragment extends Fragment {
                 tts.setPitch((float) 1);
                 if (Objects.equals(lang, "EN")) {
                     tts.speak("mist sprayer has been started", TextToSpeech.QUEUE_ADD, null);
+                    Toast.makeText(getActivity().getApplicationContext(),"mist sprayer has been started", Toast.LENGTH_LONG).show();
                 }
                 else if(Objects.equals(lang,"MR")){
                     tts.speak("धुसर स्प्रेअर सुरु झाला आहे",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"धुसर स्प्रेअर सुरु झाला आहे", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"PB"))
                 {
                     tts.speak("ਧੁੰਧ ਸਪਰੇਅਰ ਸ਼ੁਰੂ ਹੋ ਗਿਆ ਹੈ",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"ਧੁੰਧ ਸਪਰੇਅਰ ਸ਼ੁਰੂ ਹੋ ਗਿਆ ਹੈ", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"KA"))
                 {
                     tts.speak("ಮಂಜು ಸಿಂಪಡಿಸುವವವನ್ನು ಪ್ರಾರಂಭಿಸಲಾಗಿದೆ",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"ಮಂಜು ಸಿಂಪಡಿಸುವವವನ್ನು ಪ್ರಾರಂಭಿಸಲಾಗಿದೆ", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"BN"))
                 {
                     tts.speak("কুয়াশা স্প্রেয়ার শুরু হয়েছে",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"কুয়াশা স্প্রেয়ার শুরু হয়েছে", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"TE"))
                 {
                     tts.speak("మంచు తుషార యంత్రం ప్రారంభించబడింది",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"మంచు తుషార యంత్రం ప్రారంభించబడింది", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"HI"))
                 {
                     tts.speak("धुंध स्प्रेयर शुरू किया गया है",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"धुंध स्प्रेयर शुरू किया गया है", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"GU"))
                 {
                     tts.speak("ઝાકળ સ્પ્રેઝર શરૂ કરવામાં આવ્યું છે",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"ઝાકળ સ્પ્રેઝર શરૂ કરવામાં આવ્યું છે", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -857,33 +897,41 @@ public class LivFragment extends Fragment {
                 tts.setPitch((float) 1);
                 if (Objects.equals(lang, "EN")) {
                     tts.speak("mist sprayer has been stopped", TextToSpeech.QUEUE_ADD, null);
+                    Toast.makeText(getActivity().getApplicationContext(),"mist sprayer has been stopped", Toast.LENGTH_LONG).show();
                 }
                 else if(Objects.equals(lang,"MR")){
                     tts.speak("धुकेचे स्प्रेअर बंद केले गेले आहे",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"धुकेचे स्प्रेअर बंद केले गेले आहे", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"PB"))
                 {
                     tts.speak("ਧੁੰਧ ਸਪਰੇਅਰ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"ਧੁੰਧ ਸਪਰੇਅਰ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"KA"))
                 {
                     tts.speak("ಮಂಜು ಸಿಂಪಡಿಸುವವವನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"ಮಂಜು ಸಿಂಪಡಿಸುವವವನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"BN"))
                 {
                     tts.speak("কুয়াশা স্প্রেয়ার বন্ধ করা হয়েছে",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"কুয়াশা স্প্রেয়ার বন্ধ করা হয়েছে", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"TE"))
                 {
                     tts.speak("మిస్ట్ తుషార యంత్రం నిలిపివేయబడింది",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"మిస్ట్ తుషార యంత్రం నిలిపివేయబడింది", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"HI"))
                 {
                     tts.speak("धुंध स्प्रेयर बंद कर दिया गया है",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"धुंध स्प्रेयर बंद कर दिया गया है", Toast.LENGTH_LONG).show();
                 }
                 else if (Objects.equals(lang,"GU"))
                 {
                     tts.speak("ઝાકળ સ્પ્રેઝર બંધ કરવામાં આવ્યું છે",TextToSpeech.QUEUE_ADD,null);
+                    Toast.makeText(getActivity().getApplicationContext(),"ઝાકળ સ્પ્રેઝર બંધ કરવામાં આવ્યું છે", Toast.LENGTH_LONG).show();
                 }
             }
         });
